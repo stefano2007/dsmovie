@@ -3,19 +3,9 @@ import { useState, useEffect } from "react";
 import MovieCard from "components/MovieCard";
 import Pagination from "components/Pagination";
 import { BASE_URL } from "utils/requests";
-import { Movie } from "types/movie";
 import { MoviePage } from "types/moviePage";
 
 function Listing (){
-/*
-    const movie = {
-        id: 1,
-        image: "https://www.themoviedb.org/t/p/w533_and_h300_bestv2/jBJWaqoSCiARWtfV0GlqHrcdidd.jpg",
-        title: "The Witcher",
-        count: 2,
-        score: 4.5
-    };
-*/
 
     const [page, setPage] = useState<MoviePage>({
         content: [],
